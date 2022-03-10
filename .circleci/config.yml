@@ -24,7 +24,7 @@ jobs:
             python setup.py install
             pip install -r test-requirements.txt
             pip install tox
-            tox
+            tox -e py38
   build-medium-arm64:
     machine:
       image: ubuntu-2004:202101-01
@@ -46,7 +46,7 @@ jobs:
             python setup.py install
             pip install -r test-requirements.txt
             pip install tox
-            tox
+            tox -e py38
                     
 
       
